@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TS_Tool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8feabc5f0b6c926cee9b617e925b12188f9f0bc4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+929f10177f7c80234fe91430492e7bdf9699ab32")]
 [assembly: System.Reflection.AssemblyProductAttribute("TS_Tool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TS_Tool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

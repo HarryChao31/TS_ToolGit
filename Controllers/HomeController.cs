@@ -33,6 +33,7 @@ namespace TS_Tool.Controllers
             var sql = $"EXEC GetBetInfoByWebidAndRefno {Webid}, '{Refno}'";
             var betdetailList = _db.BetInformation
                 .FromSqlRaw($"EXEC GetBetInfoByWebidAndRefno {Webid}, '{Refno}'")
+                .AsNoTracking()
                 .ToList();
 
             return PartialView("_BetDetailPartialView", betdetailList);
@@ -45,6 +46,7 @@ namespace TS_Tool.Controllers
             ViewBag.Refno = Refno;
             var SWError = _db.SWErrorInfo
         .FromSqlRaw($"EXEC GetSWErrorByWebidAndRefno {Webid}, '{Refno}'")
+        .AsNoTracking()
         .ToList();
             return PartialView("_SWErrorPartialView", SWError);
         }
