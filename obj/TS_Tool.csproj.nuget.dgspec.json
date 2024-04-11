@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\TS_Tool\\TS_Tool.csproj": {}
+    "C:\\Projects\\TS_ToolGit\\TS_Tool.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\TS_Tool\\TS_Tool.csproj": {
+    "C:\\Projects\\TS_ToolGit\\TS_Tool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\TS_Tool\\TS_Tool.csproj",
+        "projectUniqueName": "C:\\Projects\\TS_ToolGit\\TS_Tool.csproj",
         "projectName": "TS_Tool",
-        "projectPath": "C:\\Projects\\TS_Tool\\TS_Tool.csproj",
+        "projectPath": "C:\\Projects\\TS_ToolGit\\TS_Tool.csproj",
         "packagesPath": "C:\\Users\\harry.chao\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\TS_Tool\\obj\\",
+        "outputPath": "C:\\Projects\\TS_ToolGit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

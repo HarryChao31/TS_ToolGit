@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xLNn/Ox/wLkdpuVmsHVwoZC9zpOyfD83jaOUCIFR9pS2x+ToHmmJW6IDUbZwHAKXYdLsIp8WpjpQk5Ifxp3Jhg==",
+  "dgSpecHash": "S1TTMKKRknP3EOPnk+E4NUC54+pRpld1IwKbODxymUfF2HFkJlgfYFiGlT7E1acY4cZZ6+hlTMQNRXN6umlCLg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\TS_Tool\\TS_Tool.csproj",
+  "projectFilePath": "C:\\Projects\\TS_ToolGit\\TS_Tool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\harry.chao\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\harry.chao\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

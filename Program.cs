@@ -1,12 +1,21 @@
 using TS_Tool.DataLayer;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
+using TS_Tool.Service.GetBetInfo;
+using TS_Tool.Service.GetSWError;
+using TS_Tool.Service.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IGetBetInfoService, GetBetInfoService>();
+builder.Services.AddScoped<IGetBetInfoRepository, GetBetInfoRepository>();
+builder.Services.AddScoped<IGetSWErrorService, GetSWErrorService>();
+builder.Services.AddScoped<IGetSWErrorRepository, GetSWErrorRepository>();
+
+
 
 var app = builder.Build();
 

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\TS_ToolGit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\service\\getswerror\\getswerrorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:service\\getswerror\\getswerrorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\service\\getbetinfo\\getbetinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:service\\getbetinfo\\getbetinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\service\\repository\\getswerrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:service\\repository\\getswerrorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\service\\repository\\getbetinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:service\\repository\\getbetinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|c:\\projects\\ts_toolgit\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C49725C8-736D-41C0-B8F4-C80C7EDC20F5}|TS_Tool.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T17:32:02.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAQwCgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T05:35:33.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetSWErrorService.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Service\\GetSWError\\GetSWErrorService.cs",
+              "RelativeDocumentMoniker": "Service\\GetSWError\\GetSWErrorService.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Service\\GetSWError\\GetSWErrorService.cs*",
+              "RelativeToolTip": "Service\\GetSWError\\GetSWErrorService.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T17:04:05.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetBetInfoService.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Service\\GetBetInfo\\GetBetInfoService.cs",
+              "RelativeDocumentMoniker": "Service\\GetBetInfo\\GetBetInfoService.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Service\\GetBetInfo\\GetBetInfoService.cs",
+              "RelativeToolTip": "Service\\GetBetInfo\\GetBetInfoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:41:34.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetBetInfoRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Service\\Repository\\GetBetInfoRepository.cs",
+              "RelativeDocumentMoniker": "Service\\Repository\\GetBetInfoRepository.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Service\\Repository\\GetBetInfoRepository.cs",
+              "RelativeToolTip": "Service\\Repository\\GetBetInfoRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwAkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T16:05:35.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetSWErrorRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\TS_ToolGit\\Service\\Repository\\GetSWErrorRepository.cs",
+              "RelativeDocumentMoniker": "Service\\Repository\\GetSWErrorRepository.cs",
+              "ToolTip": "C:\\Projects\\TS_ToolGit\\Service\\Repository\\GetSWErrorRepository.cs",
+              "RelativeToolTip": "Service\\Repository\\GetSWErrorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T16:54:29.455Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
