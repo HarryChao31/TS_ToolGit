@@ -11,6 +11,7 @@ namespace TS_Tool.DataLayer
 
         public DbSet<Betdetail> BetInformation { get; set; }
         // Add other DbSet properties for tables in the first database
+
     }
     public class SecondDbContext : DbContext
     {
@@ -26,6 +27,11 @@ namespace TS_Tool.DataLayer
         {
         }
         public DbSet<Betdetail> OSBetInformation { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Betdetail>().HasNoKey();
+        }
+
         // Add other DbSet properties for tables in the second database
     }
 }

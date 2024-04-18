@@ -17,10 +17,10 @@ namespace TS_Tool.Service.Repository
             _CasMainWLDbContext = casMainWLDbContext;
         }
 
-        List<Betdetail> IGetOSBetInfoBySingleBetRepository.GetOSBetInfoDataBySingleBet(string WebId, string RefNo)
+        List<Betdetail> IGetOSBetInfoBySingleBetRepository.GetOSBetInfoDataBySingleBet(String WebId, String RefNo)
         {
             var betdetailList = _CasMainWLDbContext.OSBetInformation
-    .FromSqlRaw($"EXEC GetOSBetInfoBySingleBet {WebId}, '{RefNo}'")
+    .FromSqlRaw($"EXEC GetOSBetInfoBySingleBet  '{RefNo}'")
     .AsNoTracking()
     .ToList();
 

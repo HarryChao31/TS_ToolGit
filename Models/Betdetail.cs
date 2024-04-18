@@ -9,21 +9,27 @@ namespace TS_Tool.Models
 {
     public class Betdetail
     {
-        [Key]
+        [NotMapped]
         public int Webid { get; set; }
+        [Key]
         public string Refno { get; set; }
+        [NotMapped]
         public string UserName { get; set; }
         [Column(TypeName = "Bigint")][NotMapped]
         public long Transid { get; set; }
+        [NotMapped]
         public string Match { get; set; }
+        [NotMapped]
         public string League { get; set; }
         [NotMapped]
         public int MatchResultId { get; set;}
+        [NotMapped]
         public string Status { get; set; }
         [NotMapped]
         public string OsStatus { get; set; }
         [NotMapped]
         public int BetType { get; set; }
+        [NotMapped]
         public string BetOption { get; set; }
         [NotMapped]
         public string Remark { get; set;}

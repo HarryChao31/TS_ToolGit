@@ -16,10 +16,10 @@ namespace TS_Tool.Service.Repository
         {
             _CasMainWLDbContext = casMainWLDbContext;
         }
-        List<Betdetail> IGetOSBetInfoByMixParlayBetRepository.GetOSBetInfoDataByMixParlay(string WebId, string RefNo)
+        List<Betdetail> IGetOSBetInfoByMixParlayBetRepository.GetOSBetInfoDataByMixParlay(String WebId, String RefNo)
         {
             var betdetailList = _CasMainWLDbContext.OSBetInformation
-    .FromSqlRaw($"EXEC GetOSBetInfoByMP {WebId}, '{RefNo}'")
+    .FromSqlRaw($"EXEC GetOSBetInfoByMP  '{RefNo}'")
     .AsNoTracking()
     .ToList();
 
