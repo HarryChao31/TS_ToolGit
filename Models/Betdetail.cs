@@ -13,16 +13,19 @@ namespace TS_Tool.Models
         public int Webid { get; set; }
         public string Refno { get; set; }
         public string UserName { get; set; }
-        [Column(TypeName = "Bigint")]
+        [Column(TypeName = "Bigint")][NotMapped]
         public long Transid { get; set; }
         public string Match { get; set; }
         public string League { get; set; }
+        [NotMapped]
         public int MatchResultId { get; set;}
         public string Status { get; set; }
+        [NotMapped]
         public string OsStatus { get; set; }
-        [Column(TypeName = "tinyint")]
-        public Byte BetType { get; set; }
+        [NotMapped]
+        public int BetType { get; set; }
         public string BetOption { get; set; }
+        [NotMapped]
         public string Remark { get; set;}
        //SW Error
        // public string? Action { get; set;}

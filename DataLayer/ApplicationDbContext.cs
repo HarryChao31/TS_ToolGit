@@ -3,13 +3,29 @@ using TS_Tool.Models;
 
 namespace TS_Tool.DataLayer
 {
-    public class ApplicationDbContext:DbContext
+    public class FirstDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public FirstDbContext(DbContextOptions<FirstDbContext> options) : base(options)
         {
         }
-        public DbSet<Betdetail>BetInformation { get; set; }
+
+        public DbSet<Betdetail> BetInformation { get; set; }
+        // Add other DbSet properties for tables in the first database
+    }
+    public class SecondDbContext : DbContext
+    {
+        public SecondDbContext(DbContextOptions<SecondDbContext> options) : base(options)
+        {
+        }
         public DbSet<SeamlessWalletError> SWErrorInfo { get; set; }
 
+    }
+    public class ThirdDbContext : DbContext
+    {
+        public ThirdDbContext(DbContextOptions<ThirdDbContext> options) : base(options)
+        {
+        }
+        public DbSet<Betdetail> OSBetInformation { get; set; }
+        // Add other DbSet properties for tables in the second database
     }
 }

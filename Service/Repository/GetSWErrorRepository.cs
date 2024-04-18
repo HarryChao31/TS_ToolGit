@@ -10,15 +10,15 @@ namespace TS_Tool.Service.Repository
     }
     public class GetSWErrorRepository : IGetSWErrorRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly SecondDbContext _RecorddbContext;
 
-        public GetSWErrorRepository(ApplicationDbContext dbContext)
+        public GetSWErrorRepository(SecondDbContext RecorddbContext)
         {
-            _dbContext = dbContext;
+            _RecorddbContext = RecorddbContext;
         }
         public List<SeamlessWalletError> GetSWErrorFromDB(String WebId, String RefNo) {
-            var SWError = _dbContext.SWErrorInfo
-  .FromSqlRaw($"EXEC GetSWErrorByWebidAndRefno {WebId}, '{RefNo}'")
+            var SWError = _RecorddbContext.SWErrorInfo
+  .FromSqlRaw($"EXEC GetSeamlessWalletError {WebId}, '{RefNo}'")
   .AsNoTracking()
   .ToList();
             return SWError;

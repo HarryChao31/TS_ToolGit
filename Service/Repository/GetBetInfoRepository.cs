@@ -9,16 +9,20 @@ namespace TS_Tool.Service.Repository
     }
     public class GetBetInfoRepository : IGetBetInfoRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly FirstDbContext _GameProviderdbContext;
+        private readonly ILogger<GetBetInfoRepository> _logger;
 
-        public GetBetInfoRepository(ApplicationDbContext dbContext)
+
+        public GetBetInfoRepository(FirstDbContext GameProviderdbContext, ILogger<GetBetInfoRepository> logger)
         {
-            _dbContext = dbContext;
+            _GameProviderdbContext = GameProviderdbContext;
+            _logger = logger;
         }
         public List<Betdetail> GetBetInfoData(String WebId, String RefNo)
         {
-            var betdetailList = _dbContext.BetInformation
-                .FromSqlRaw($"EXEC GetBetInfoByWebidAndRefno {WebId}, '{RefNo}'")
+            _logger.LogInformation("Executing GetBetInfoData with parameters WebId: {WebId}, RefNo: {RefNo}", WebId, RefNo);
+            var betdetailList = _GameProviderdbContext.BetInformation
+                .FromSqlRaw($"EXEC GetBetInfo {WebId}, '{RefNo}'")
                 .AsNoTracking()
                 .ToList();
 
