@@ -20,7 +20,6 @@ namespace TS_Tool.Service.Repository
         }
         public List<Betdetail> GetBetInfoData(String WebId, String RefNo)
         {
-            _logger.LogInformation("Executing GetBetInfoData with parameters WebId: {WebId}, RefNo: {RefNo}", WebId, RefNo);
             var betdetailList = _GameProviderdbContext.BetInformation
                 .FromSqlRaw($"EXEC GetBetInfo {WebId}, '{RefNo}'")
                 .AsNoTracking()

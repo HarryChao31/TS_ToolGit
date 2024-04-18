@@ -21,14 +21,15 @@
                 <th scope="col">@Html.DisplayNameFor(model => model.First().Webid)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().Refno)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().UserName)</th>
-                <th scope="col">@Html.DisplayNameFor(model => model.First().Transid)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().Match)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().League)</th>
-                <th scope="col">@Html.DisplayNameFor(model => model.First().MatchResultId)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().Status)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().BetType)</th>
                 <th scope="col">@Html.DisplayNameFor(model => model.First().BetOption)</th>
-                <th scope="col">@Html.DisplayNameFor(model => model.First().Remark)</th>
+@*                 <th scope="col">@Html.DisplayNameFor(model => model.First().Transid)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().OsStatus)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().MatchResultId)</th>
+                <th scope="col">@Html.DisplayNameFor(model => model.First().Remark)</th> *@
             </tr>
         </thead>
         <tbody>
@@ -38,15 +39,15 @@
                     <td>@Html.DisplayFor(modelItem => item.Webid)</td>
                     <td>@Html.DisplayFor(modelItem => item.Refno)</td>
                     <td>@Html.DisplayFor(modelItem => item.UserName)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Transid)</td>
                     <td>@Html.DisplayFor(modelItem => item.Match)</td>
                     <td>@Html.DisplayFor(modelItem => item.League)</td>
-                    <td>@Html.DisplayFor(modelItem => item.MatchResultId)</td>
                     <td>@Html.DisplayFor(modelItem => item.Status)</td>
-                    <td>@Html.DisplayFor(modelItem => item.OsStatus)</td>
                     <td>@Html.DisplayFor(modelItem => item.BetType)</td>
                     <td>@Html.DisplayFor(modelItem => item.BetOption)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Remark)</td>
+@*                     <td>@Html.DisplayFor(modelItem => item.Transid)</td>
+                    <td>@Html.DisplayFor(modelItem => item.OsStatus)</td>
+                    <td>@Html.DisplayFor(modelItem => item.MatchResultId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Remark)</td> *@
                 </tr>
             }
         
