@@ -1,27 +1,29 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using TS_Tool.DataLayer;
 using TS_Tool.Models;
 
 namespace TS_Tool.Service.Repository
 {
-    public interface IGetBetInfoRepository {
-        List<Betdetail> GetBetInfoData(String WebId, String RefNo);
-    }
-    public class GetBetInfoRepository : IGetBetInfoRepository
+    public interface IGetBetInfoRepository<TContext> where TContext : DbContext
     {
-        private readonly FirstDbContext _GameProviderdbContext;
-        private readonly ILogger<GetBetInfoRepository> _logger;
+        List<Betdetail> GetBetInfoData(int webId, string refNo);
+    }
 
+    public class GetBetInfoRepository<TContext> : IGetBetInfoRepository<TContext> where TContext : DbContext
+    {
+        private readonly TContext _dbContext;
 
-        public GetBetInfoRepository(FirstDbContext GameProviderdbContext, ILogger<GetBetInfoRepository> logger)
+        public GetBetInfoRepository(TContext dbContext)
         {
-            _GameProviderdbContext = GameProviderdbContext;
-            _logger = logger;
+            _dbContext = dbContext;
         }
-        public List<Betdetail> GetBetInfoData(String WebId, String RefNo)
+
+        public List<Betdetail> GetBetInfoData(int webId, string refNo)
         {
-            var betdetailList = _GameProviderdbContext.BetInformation
-                .FromSqlRaw($"EXEC GetBetInfo {WebId}, '{RefNo}'")
+            var betdetailList = _dbContext.Set<Betdetail>()
+                .FromSqlRaw($"EXEC GetBetInfo {webId}, '{refNo}'")
                 .AsNoTracking()
                 .ToList();
 

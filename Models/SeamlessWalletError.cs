@@ -13,7 +13,10 @@ namespace TS_Tool.Models
         public int WebId { get; set; }
         public string? Action { get; set; }
         public string? ErrorMessage { get; set; }
+        [NotMapped]
         public string? HostName { get; set; }
+        [NotMapped]
         public string? Request { get; set; }
+        public DateTime CreatedOn { get; set; }
     }
 }

@@ -8,16 +8,25 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<FirstDbContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FirstDatabaseConnection")));
-builder.Services.AddDbContext<SecondDbContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("SecondDatabaseConnection")));
+builder.Services.AddDbContext<YY1GameProviderDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("YY1GameProviderDatabaseConnection")));
+builder.Services.AddDbContext<YY1RecordDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YY1RecordDatabaseConnection")));
 builder.Services.AddDbContext<ThirdDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("ThirdDatabaseConnection")));
+builder.Services.AddDbContext<YY2GameProviderDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YY2GameProviderDatabaseConnection")));
+builder.Services.AddDbContext<YY2RecordDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YY2RecordDatabaseConnection")));
+builder.Services.AddDbContext<YY3GameProviderDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YY3GameProviderDatabaseConnection")));
+builder.Services.AddDbContext<YY3RecordDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("YY3RecordDatabaseConnection")));
 builder.Services.AddScoped<IGetBetInfoService, GetBetInfoService>();
-builder.Services.AddScoped<IGetBetInfoRepository, GetBetInfoRepository>();
+builder.Services.AddScoped(typeof(IGetBetInfoRepository<>), typeof(GetBetInfoRepository<>));
 builder.Services.AddScoped<IGetSWErrorService, GetSWErrorService>();
-builder.Services.AddScoped<IGetSWErrorRepository, GetSWErrorRepository>();
+builder.Services.AddScoped(typeof(IGetSWErrorRepository<>), typeof(GetSWErrorRepository<>));
+
 builder.Services.AddScoped<IGetOSBetInfoByMixParlayBetRepository, GetOSBetInfoByMixParlayBetRepository>();
 builder.Services.AddScoped<IGetOSBetInfoBySingleBetRepository, GetOSBetInfoBySingleBetRepository>();
 

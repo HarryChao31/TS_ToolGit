@@ -3,9 +3,9 @@ using TS_Tool.Models;
 
 namespace TS_Tool.DataLayer
 {
-    public class FirstDbContext : DbContext
+    public class YY1GameProviderDbContext : DbContext
     {
-        public FirstDbContext(DbContextOptions<FirstDbContext> options) : base(options)
+        public YY1GameProviderDbContext(DbContextOptions<YY1GameProviderDbContext> options) : base(options)
         {
         }
 
@@ -13,9 +13,9 @@ namespace TS_Tool.DataLayer
         // Add other DbSet properties for tables in the first database
 
     }
-    public class SecondDbContext : DbContext
+    public class YY1RecordDbContext : DbContext
     {
-        public SecondDbContext(DbContextOptions<SecondDbContext> options) : base(options)
+        public YY1RecordDbContext(DbContextOptions<YY1RecordDbContext> options) : base(options)
         {
         }
         public DbSet<SeamlessWalletError> SWErrorInfo { get; set; }

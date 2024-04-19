@@ -21,6 +21,8 @@
             <th scope="col">ErrorMessage</th>
             <th scope="col">HostName</th>
             <th scope="col">Request</th>
+            <th scope="col">CreatedOn</th>
+
         </tr>
     </thead>
     <tbody>
@@ -32,6 +34,7 @@
                 <td>@Html.DisplayFor(modelItem => item.ErrorMessage)</td>
                 <td>@Html.DisplayFor(modelItem => item.HostName)</td>
                 <td>@Html.DisplayFor(modelItem => item.Request)</td>
+                <td>@Html.DisplayFor(modelItem => item.CreatedOn)</td>
             </tr>
         }
     </tbody>
