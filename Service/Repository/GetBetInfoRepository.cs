@@ -4,10 +4,11 @@ using TS_Tool.Models;
 
 namespace TS_Tool.Service.Repository
 {
-    public interface IGetBetInfoRepository {
+    public interface INewSystemGameProviderRepo {
         List<Betdetail> GetBetInfoData(String WebId, String RefNo);
+        NewSystemSportsBet GetSportsBet(string webId, string refNo);
     }
-    public class GetBetInfoRepository : IGetBetInfoRepository
+    public class GetBetInfoRepository : INewSystemGameProviderRepo
     {
         private readonly FirstDbContext _GameProviderdbContext;
         private readonly ILogger<GetBetInfoRepository> _logger;
@@ -27,6 +28,11 @@ namespace TS_Tool.Service.Repository
                 .ToList();
 
             return betdetailList;
+        }
+
+        public NewSystemSportsBet GetSportsBet(string webId, string refNo)
+        {
+            throw new NotImplementedException();
         }
     }
 }

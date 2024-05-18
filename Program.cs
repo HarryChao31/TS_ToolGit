@@ -8,14 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<FirstDbContext>(options => 
+builder.Services.AddDbContext<YY1GameProviderDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("FirstDatabaseConnection")));
 builder.Services.AddDbContext<SecondDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("SecondDatabaseConnection")));
 builder.Services.AddDbContext<ThirdDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("ThirdDatabaseConnection")));
 builder.Services.AddScoped<IGetBetInfoService, GetBetInfoService>();
-builder.Services.AddScoped<IGetBetInfoRepository, GetBetInfoRepository>();
+builder.Services.AddScoped<INewSystemGameProviderRepo, GetBetInfoRepository>();
 builder.Services.AddScoped<IGetSWErrorService, GetSWErrorService>();
 builder.Services.AddScoped<IGetSWErrorRepository, GetSWErrorRepository>();
 builder.Services.AddScoped<IGetOSBetInfoByMixParlayBetRepository, GetOSBetInfoByMixParlayBetRepository>();
