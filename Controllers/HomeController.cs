@@ -28,7 +28,7 @@ namespace TS_Tool.Controllers
             _GetSWErrorService = GetSWErrorService;
         }
         [HttpPost]
-        public IActionResult Index(string Webid, string Refno)
+        public IActionResult Index(int Webid, string Refno)
         {
             var betdetailist = _GetBetInfoService.GetBetInfoData(Webid,Refno);
             return PartialView("_BetDetailPartialView", betdetailist);
@@ -36,7 +36,7 @@ namespace TS_Tool.Controllers
 
         }
         [HttpPost]
-        public IActionResult SWError(string Webid, string Refno) {
+        public IActionResult SWError(int Webid, string Refno) {
             var SWError = _GetSWErrorService.GetSWErrorFromDB(Webid,Refno);
             return PartialView("_SWErrorPartialView", SWError);
         }
